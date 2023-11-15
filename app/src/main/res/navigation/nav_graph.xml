@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <action
+        android:id="@+id/toLogin"
+        app:popUpTo="@id/tabContainerFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/loginFragment"/>
+
+    <action
+        android:id="@+id/toHome"
+        app:popUpTo="@id/loginFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/tabContainerFragment"/>
+
+    <fragment
+        android:id="@+id/tabContainerFragment"
+        android:name="com.renbin.mob21firebases.ui.tabContainer.TabContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_tab_container" >
+        <action
+            android:id="@+id/action_home_to_addTodo"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_home_to_editTodo"
+            app:destination="@id/editTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.renbin.mob21firebases.ui.addEditTodo.AddTodoFragment"
+        android:label="AddTodoFragment"
+        tools:layout="@layout/fragment_base_add_edit_todo"/>
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="com.renbin.mob21firebases.ui.addEditTodo.EditTodoFragment"
+        android:label="EditTodoFragment"
+        tools:layout="@layout/fragment_base_add_edit_todo">
+        <argument
+            android:name="todoId"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.renbin.mob21firebases.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.renbin.mob21firebases.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/tabContainerFragment" />
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment" />
+    <action
+        android:id="@+id/action_global_registerFragment"
+        app:destination="@id/registerFragment" />
+</navigation>

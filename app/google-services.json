@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025520542493",
+    "firebase_url": "https://mob21-firebase-default-rtdb.firebaseio.com",
+    "project_id": "mob21-firebase",
+    "storage_bucket": "mob21-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025520542493:android:93a81dea90039f333b77f4",
+        "android_client_info": {
+          "package_name": "com.renbin.mob21firebases"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025520542493-f45ugs2pfotcs3d4g1eoj3he5imcinvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.renbin.mob21firebases",
+            "certificate_hash": "13df108cbd692fb5dd4d2964e77513bf326d3f19"
+          }
+        },
+        {
+          "client_id": "1025520542493-akmblob5vvo5p5agf1bisgrlp6oo9a66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANIyM6AmaLwBmh24vpmwgXAo0NmTtBw2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025520542493-akmblob5vvo5p5agf1bisgrlp6oo9a66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
